@@ -17,7 +17,20 @@ h1{
 }
 
 h2{
-    font-size: 20px;
+    font-size: 15px;
+}
+
+.burger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: blue;
+    color: white;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    border-radius: 4px;
 }
 
 .hero{

@@ -9,12 +9,18 @@
     <link href = "https://fonts.googleapis.com/css2?family=Roboto:wght@300;@400;@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/04c0f19e04.js" crossorigin="anonymous"></script>
     <link href="/css/normalize.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" />
 </head>
 <body>
     <header class="hero">
-        <img width="25%" src="/images/logo-mercado-liebre.svg" alt="logo mercado liebre">
+        <img width="50%" src="/images/logo-mercado-liebre.svg" alt="logo mercado liebre">
         
-        <p>Lugar para poner la barra de búsqueda</p>
+        <div>
+            <label></label>
+            <input type="text" name="nombre" placeholder="Buscar productos, marcas">
+            <button class="hero-search__submit"><i class="fa fa-search"></i></button>
+        </div>
         
         <h2>
             <i class="fas fa-hand-holding-usd"></i>
@@ -29,11 +35,14 @@
                 <li><a href="#" class="menu">Ayuda</a></li>
             </ul>
             <ul class="hero-menu">
-                <li><a href="#"class="menu-icon">Crea tu cuenta</a></li>
+                <li><a href="#"class="menu-icon">Crea tu cuenta</a><i class="far fa-address-card"></i></li>
                 <li><a href="#"class="menu-icon">Ingresa</a><i class="fas fa-sign-in-alt"></i></li>
-                <li><a href="#"class="menu-icon">Mis compras</a></li>
+                <li><a href="#"class="menu-icon">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
             </ul>
         </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+            </div>
 
     </header>
     <main>
@@ -54,8 +63,8 @@
                 <img width="360" src="/images/img-macbook-pro-2019.jpg" alt="">
             
             <div>
-                <p>$230.000</p>
-                <p>20% OFF</p>
+                <p class="price">$230.000</p>
+                <p class="discounts">20% OFF</p>
                 <h3>Macbook Pro 2019</h3>
             </div>
         </div>
@@ -64,8 +73,8 @@
                 <img width="360" src="/images/img-samsung-galaxy-s10.jpg" alt="">
             
             <div>
-                <p>$70.500</p>
-                <p>10% OFF</p>
+                <p class="price">$70.500</p>
+                <p class="discounts">10% OFF</p>
                 <h3>Samsung Galaxy S10</h3>
             </div>
         </div>
@@ -88,8 +97,8 @@
                 <img width="360" src="/images/img-cafetera-moulinex.jpg" alt="">
             
             <div>
-                <p>$6.770</p>
-                <p>40% OFF</p>
+                <p class="price">$6.770</p>
+                <p class="discounts">40% OFF</p>
                 <h3>Cafetera Moulinex</h3>
             </div>
         </div>
@@ -98,8 +107,8 @@
                 <img width="360" src="/images/img-macbook-pro-2019.jpg" alt="">
             
             <div>
-                <p>$230.000</p>
-                <p>20% OFF</p>
+                <p class="price">$230.000</p>
+                <p class="discounts">20% OFF</p>
                 <h3>Macbook Pro 2019</h3>
             </div>
         </div>
@@ -108,8 +117,8 @@
                 <img width="360" src="/images/img-samsung-galaxy-s10.jpg" alt="">
            
             <div>
-                <p>$70.500</p>
-                <p>10% OFF</p>
+                <p class="price">$70.500</p>
+                <p class="discounts">10% OFF</p>
                 <h3>Samsung Galaxy S10</h3>
             </div>
         </div>
@@ -118,8 +127,8 @@
                 <img width="360" src="/images/img-tv-samsung-smart.jpg" alt="">
             
             <div>
-                <p>$23.200</p>
-                <p>5% OFF</p>
+                <p class="price">$23.200</p>
+                <p class="discounts">5% OFF</p>
                 <h3>SmartTv Samsung 43"</h3>
             </div>
         </div>
@@ -127,6 +136,36 @@
         </section>
 
     </main>
+
+    <!--Formularios-->
+    <form action='/crear productos' method="POST">
+        <div>
+            <label>Nombre del producto:</label>
+            <input type="text" name="nombre">
+        </div>
+        <div>
+            <label>Precio:</label>
+            <input type="text" name="precio">
+        </div>
+        <div>
+            <label>Descripción</label>
+            <textarea name="descripcion"></textarea>
+        </div>
+        <div>
+            <label>Esta en oferta:</label>
+            <input type="" name="en oferta">
+        </div>
+        <div>
+            <label>Categoria</label>
+            <select name="Categoria">
+                <option value="hogar">Hogar</option>
+                <option value="electro">Electro</option>
+                <option value="indumentaria">Indumentaria</option>
+            </select>
+        </div>
+        <button type="reset">Borrar</button>
+        <button type="submit">Guardar</button>
+    </form>
 
     <footer>
         <ul>
