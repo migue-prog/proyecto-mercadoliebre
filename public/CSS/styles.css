@@ -11,13 +11,20 @@ body{
 }
 
 h1{
-
     font-size: 24px;
     font-weight: bold;
 }
 
 h2{
     font-size: 15px;
+}
+
+
+.price{
+    font-size: 18px;
+}
+.discounts{
+    font-size: 16px;
 }
 
 .burger-menu {
@@ -33,10 +40,17 @@ h2{
     border-radius: 4px;
 }
 
+
 .hero{
     background-color: #EAC926;
-    padding: 20px;
-    color: #000;
+}
+
+.hero-menu-bar-fees {
+    display: flex;
+    justify-content: space-between;
+	align-items: baseline;
+    align-items: center;
+    padding: 20px 0 20px 0;
 }
 
 .hero-menu-wrap{
@@ -48,8 +62,13 @@ h2{
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    
 }
+
+.contenedor{
+    margin: auto;
+    max-width: 1100px;
+}
+
 .menu-icon{
     margin-right: 10px;
     text-decoration: none;
@@ -59,12 +78,16 @@ h2{
     color: #666;
 }
 
-.price{
-    font-size: 18px;
-}
-.discounts{
-    font-size: 16px;
+.ico-footer {
+    font-size: 2em;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.list-footer {
+    justify-content: center;
+}
 
 
