@@ -4,10 +4,9 @@ Font size: Cuerpos de texto: 12px | Titulares: 24px | Precios: 18px | Descuentos
 */
 
 body{
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    color: #666;  
-    margin: 0;
+    color: #666;
 }
 
 h1{
@@ -16,9 +15,26 @@ h1{
 }
 
 h2{
-    font-size: 15px;
+    font-size: 24px;
 }
 
+.product-last-views{
+    display: flex;
+    margin:auto;
+    flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+.product-main {
+    width: 90%;
+    border-top: 1px solid #ebebeb;
+    margin: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+}
 
 .price{
     font-size: 18px;
@@ -39,7 +55,6 @@ h2{
     margin: auto;
     border-radius: 4px;
 }
-
 
 .hero{
     background-color: #EAC926;
@@ -86,8 +101,9 @@ h2{
     align-items: center;
 }
 
-.list-footer {
-    justify-content: center;
+.text-footer {
+    justify-content:left; 
+    text-align: center;
 }
 
 
