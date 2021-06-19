@@ -19,11 +19,14 @@ h2{
     font-size: 24px;
 }
 
-/*
+.descripcion {
+    font-size: 16px;
+}
+
 .color-main {
     background-color: #ebebeb ;
 }
-*/
+
 .contenedor{
     margin: auto;
     max-width: 1100px;
@@ -31,50 +34,62 @@ h2{
 
 .hero-menu-bar-fees {
     display: flex;
+    font-weight: bold;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 	align-items: baseline;
     align-items: center;
     padding: 20px 0 20px 0;
 }
 
 .hero-logo {
-    width: 280px;
-    margin: auto;
+    width: 170px;
 }
 
 .hero-for-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: left;
 	align-items: center;
     margin: auto;
     padding-top: 25px;
     width: 320px;
 }
 
-.product-des { 
-    display: flex;
-	justify-content: space-between;
-	align-items: stretch;
-	align-content: center;
-}
+
 
 .product-last-views{
     display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
+    width: 90%;
 }
 
 
 .product-main {
-    width: 90%;
+    width: 100%;
     background-color: #fff;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .product-img {
-    width: 255px;
-    object-fit: cover;
+    width: 100%;
 }
+
+.product-des {
+    display: flex;
+    border-top: solid 1px #ebebeb;
+    margin: 15px;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.descripcion {
+margin: 15px;
+}
+
+
 
 .price{
     font-size: 18px;
@@ -105,7 +120,7 @@ h2{
 
 
 .hero-menu-wrap{
-    display: flex;
+    display: none;
     justify-content: space-between;
 }
 
@@ -138,12 +153,81 @@ h2{
     text-align: center;
 }
 
-@media (min-width: 769px) {
-    .contenedor {
-        width: 1100px,
-        margin: auto;
-    }
+/**formularios login**/
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+    width: 400px;
+    height: 250px;
+    background: #fff;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 4px 4px 7px 0 rgb(0 0 0 / 15%);
+    padding: 20px 30px;
+    border-top: 4px solid #EAC926;
+    margin-bottom: 15px;
 }
-    
+
+.form-input{
+    font-weight: 300;
+    padding: 5px 10px;
+    margin: 10px 0;
+    width: 300px;
+}
+
+.form-button-submit {
+    font-weight: 300;
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: #EAC926;
+    margin-bottom: 15px;
+}
+
+.form-login p {
+    text-align: center;
+}
+
+.form-login a {
+    color: #666666;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.form-login a:hover {
+    text-decoration: underline;
+}
+/**formularios Fin**/
+
+/**formulario register**/
+
+.form-register {
+padding: 20px 15px;
+}
+
+.control-formulario {
+    margin-bottom: 15px;
+}
+
+.control-formulario label {
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.control {
+    width: 100%;
+    padding: 5px;
+}
+
+/**fin register**/
 
 

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+        <title>Mercado Liebre</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/04c0f19e04.js" crossorigin="anonymous"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+        <link href="/css/normalize.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+<body>
+    <header class="hero">
+        <div class="hero-menu-bar-fees contenedor" >
+            <img class="hero-logo" src="/images/logo-mercado-liebre.svg" alt="logo mercado liebre">
+            <div class="hero-for-wrapper">
+                <form action="home.html" method="POST">
+                <label></label>
+                <input type="search" name="search" placeholder="Buscar productos, marcas">
+                <button class="hero-search__submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <p>
+                <i class="fas fa-hand-holding-usd"></i>
+                Compra en cuotas y sin tarjeta de crédito
+            </p>
+        </div>
+        <div>
+        <nav class="hero-menu-wrap contenedor">
+            <ul class="hero-menu">
+                <li><a href="#" class="menu">Ofertas</a></li>
+                <li><a href="#" class="menu">Tiendas Oficiales</a></li>
+                <li><a href="#" class="menu">Vender</a></li>
+                <li><a href="#" class="menu">Ayuda</a></li>
+            </ul>
+            <ul class="hero-menu">
+                <li><a href="#"class="menu-icon">Crea tu cuenta</a><i class="far fa-address-card"></i></li>
+                <li><a href="#"class="menu-icon">Ingresa</a><i class="fas fa-sign-in-alt"></i></li>
+                <li><a href="#"class="menu-icon">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+            </div>
+
+    </header>
+
+            <form action="register.html" method="POST" class="form-register">
+            <div class="control-formulari">
+                <div class="control-formulario">
+                    <label for="name"></label>
+                    <input class="control" type="text" name="name" id="name" placeholder="Nombre y apellido" required>
+                </div>
+                <div class="control-formulario">
+                    <label for="usuario"></label>
+                    <input class="control" type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" required>
+                </div>
+                <div class="control-formulario">
+                    <label for="email"></label>
+                    <input class="control" type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="control-formulario">
+                   <label>Fecha de Nacimiento</label>
+                </div>
+                <div class="control-formulario">
+                    <label for="date"></label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="control-formulario">
+                    <input class="control" type="text" name="Domicilio" placeholder="Domicilio" required>
+                </div>
+                <div class="control-formulario">
+                    <label>Perfil de comprador</label>  
+                </div>
+                <div class="control-formulario">
+                    <label>Comprador</label>
+                    <input type="radio" name="comprador">
+
+                    <label>Vendedor</label>
+                    <input type="radio" name="vendedor">
+                </div>
+                <div class="control-formulario">
+                    <label>Intereses</label>
+                </div>
+                <div class="control-formulario">
+                    <label>Electro</label>
+                    <input type="checkbox" name="electro">
+                    <label>Moda</label>
+                    <input type="checkbox" name="moda">
+                    <label>Hogar</label>
+                    <input type="checkbox" name="hogar">
+                    <label>Jugueteria</label>
+                    <input type="checkbox" name="jugueteria">
+                    <label>Vida Sana</label>
+                    <input type="checkbox" name="vida sana">
+                </div>
+                <div class="control-formulario">
+                    <label>Foto de Usuario</label>
+                </div>
+                <div class="control-formulario">
+                    <input type="file" name="imagen perfil">
+                </div>
+                <div class="control-formulario">
+                    <label for="password"></label>
+                    <input class="control" type="password" placeholder="Contraseña" name="clave" id="password" required>
+                </div>
+                <div class="control-formulario">
+                    <label for="password"></label>
+                    <input class="control" type="password" placeholder="Confirmar contraseña" name="clave" id="password" required>
+                </div>
+                <div>
+                    <button class="form-button-submit" type="reset">Borrar</button>
+                </div>
+                <div>
+                    <button class="form-button-submit" type="submit">Enviar</button>
+                </div>
+            </div>
+        </form>
+    
+</body>
+</html>
