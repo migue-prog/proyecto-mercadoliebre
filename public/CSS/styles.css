@@ -2,6 +2,9 @@
 Colors: Amarillo: #EAC926; Azul: #03264C; Celeste: #1259c3; Gris oscuro: #666; Gris claro: #ebebeb; Verde: #39b54a;
 Font size: Cuerpos de texto: 12px | Titulares: 24px | Precios: 18px | Descuentos: 16px | Descripciones: 16px
 */
+* {
+    box-sizing: border-box;
+}
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -19,43 +22,72 @@ h2{
     font-size: 24px;
 }
 
-.descripcion {
-    font-size: 16px;
+.contenedor{
+    width: 90vw;
+    margin: auto;
+    max-width: 459px;
+}
+
+.main-header{
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+.main-header-top-bar {
+    font-weight: bold;
+    flex-wrap: wrap;
+    justify-content: center;
+	align-items: center;
+    padding-top: 25px;
+} 
+
+.hamburguer-buttom {
+    background-color: #03264C;
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.logo {
+    width: 200px;
+}
+
+.copy-header {
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero-search-submit{
+    margin: 0px;
+    color: #666;
+}
+
+.main-navbar {
+    display: none;
+}
+
+.main-navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #666;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
 }
 
 .color-main {
     background-color: #ebebeb ;
 }
-
-.contenedor{
-    margin: auto;
-    max-width: 1100px;
-}
-
-.hero-menu-bar-fees {
-    display: flex;
-    font-weight: bold;
-    flex-wrap: wrap;
-    justify-content: center;
-	align-items: baseline;
-    align-items: center;
-    padding: 20px 0 20px 0;
-}
-
-.hero-logo {
-    width: 170px;
-}
-
-.hero-for-wrapper {
-    display: flex;
-    justify-content: left;
-	align-items: center;
-    margin: auto;
-    padding-top: 25px;
-    width: 320px;
-}
-
-
 
 .product-last-views{
     display: flex;
@@ -64,11 +96,10 @@ h2{
     width: 90%;
 }
 
-
 .product-main {
     width: 100%;
     background-color: #fff;
-    margin-bottom: 10px;
+    margin: 5px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -85,12 +116,6 @@ h2{
 	align-content: center;
 }
 
-.descripcion {
-margin: 15px;
-}
-
-
-
 .price{
     font-size: 18px;
 }
@@ -101,33 +126,9 @@ margin: 15px;
     font-weight: bold;
 }
 
-.burger-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    background-color: blue;
-    color: white;
-    width: 20px;
-    height: 20px;
-    margin: auto;
-    border-radius: 4px;
-}
-
-.hero{
-    background-color: #EAC926;
-}
-
-
-.hero-menu-wrap{
+.description {
     display: none;
-    justify-content: space-between;
-}
-
-.hero-menu{
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
+    font-size: 16px;
 }
 
 
@@ -140,17 +141,17 @@ margin: 15px;
     color: #666;
 }
 
+.text-footer {
+    justify-content:left; 
+    text-align: center;
+}
+
 .ico-footer {
     font-size: 2em;
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.text-footer {
-    justify-content:left; 
-    text-align: center;
 }
 
 /**formularios login**/
@@ -228,6 +229,55 @@ padding: 20px 15px;
     padding: 5px;
 }
 
-/**fin register**/
 
+@media (min-width: 768px) {
+    .main-header-top-bar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header {
+        max-width: 350px;
+        text-align: right;
+    }
+    .hamburguer-buttom {
+        display: none;
+    }
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul {
+        display: flex;
+    }
+    .main-navbar li {
+        margin: 0 2px;
+    }
+}
 
+@media (min-width: 1100px) {
+    .logo {
+        width: 250px;
+    }
+    .main-header-top-bar, .main-navbar {
+        max-width: 1100px;
+        margin: auto;
+    }
+    .main-header-top-bar{
+        align-items: center;
+    }
+    .copy-header {
+        margin: 0;
+        max-width: none;
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .main-navbar{
+        margin-top: 30px;
+    }
+    .main-navbar li {
+        margin: 0 10px;
+    }
+    .main-navbar a {
+        font-size: 19px;
+    }
+}
