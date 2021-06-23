@@ -14,40 +14,38 @@
         <link rel="stylesheet" href="/css/styles.css">
     </head>
 <body>
-    <header class="hero">
-        <div class="hero-menu-bar-fees contenedor" >
-            <img class="hero-logo" src="/images/logo-mercado-liebre.svg" alt="logo mercado liebre">
-            <div class="hero-for-wrapper">
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="/images/logo-mercado-liebre.svg" class="logo" alt="logo mercado liebre">
+            <div>
                 <form action="home.html" method="POST">
-                <label></label>
-                <input type="search" name="search" placeholder="Buscar productos, marcas">
-                <button class="hero-search__submit"><i class="fa fa-search"></i></button>
+                <input class="main-search" type="search" name="search" placeholder="Buscar productos, marcas">
+                <button class="hero-search-submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
-            <p>
-                <i class="fas fa-hand-holding-usd"></i>
-                Compra en cuotas y sin tarjeta de crédito
-            </p>
+            <h4 class="copy-header">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    Compra en cuotas y sin tarjeta de crédito
+            </h4>
         </div>
-        <div>
-        <nav class="hero-menu-wrap contenedor">
-            <ul class="hero-menu">
+            <a href="#" class="hamburguer-buttom">
+                <i class="fas fa-bars"></i>
+            </a>
+        <nav class="main-navbar">
+            <ul class="left-navbar">
                 <li><a href="#" class="menu">Ofertas</a></li>
                 <li><a href="#" class="menu">Tiendas Oficiales</a></li>
                 <li><a href="#" class="menu">Vender</a></li>
                 <li><a href="#" class="menu">Ayuda</a></li>
             </ul>
-            <ul class="hero-menu">
-                <li><a href="#"class="menu-icon">Crea tu cuenta</a><i class="far fa-address-card"></i></li>
-                <li><a href="#"class="menu-icon">Ingresa</a><i class="fas fa-sign-in-alt"></i></li>
-                <li><a href="#"class="menu-icon">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
+            <ul class="right-navbar">
+                <li><a href="#"class="menu-icon">Crea tu cuenta <i class="far fa-address-card"></i></a></i></li>
+                <li><a href="#"class="menu-icon">Ingresa <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#"class="menu-icon">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
             </ul>
         </nav>
+            
         </div>
-        <div class="burger-menu">
-            <i class="fas fa-bars"></i>
-            </div>
-
     </header>
     <!--Formularios login-->
     <form action="login.html" method="POST">
