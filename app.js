@@ -6,7 +6,7 @@ const app = express();
 const publicPath = path.resolve(__dirname, './public' );
 app.use( express.static(publicPath) );
 
-app.listen(4000, () => {
+app.listen(process.env.PORT || 4000, function() {
     console.log("servidor corriendo en el puerto 4000");
 });
 
@@ -21,6 +21,7 @@ app.get('/login.html', (req, res) => {
 app.get('/register.html', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/register.html'));
 });
+
 
 
 
